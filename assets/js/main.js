@@ -1,4 +1,4 @@
-//Declaring variables
+/* //Declaring variables
 var cards_memory = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F', 'G', 'G', 'H', 'H', 'I', 'I', 'J', 'J', 'K', 'K', 'L', 'L'];
 var values_memory = [];
 var tile_id_memory = [];
@@ -23,4 +23,4 @@ function new_Card() {
         output += '<div id = "tile_' + i + '" onclick = "memoryFlipTile(this,\'' + cards_memory[i] + '\')"> </div>';
     }
     document.getElementById('memory_board').innerHTML = output;
-}
+} */
