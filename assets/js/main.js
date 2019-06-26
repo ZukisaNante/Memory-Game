@@ -31,7 +31,6 @@ let hasFlipped = false; //verify if the card has flipped or not
 let firstCard, secondCard;
 
 function flipCard() {
-    console.log(this)
     this.classList.add('flip');
     //to verify if card has flipped using the let variables
     if (!hasFlipped) {
