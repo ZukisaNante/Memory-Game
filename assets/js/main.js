@@ -27,8 +27,20 @@ function new_Card() {
 
 //Declaring variables
 const cards = document.querySelectorAll('.flip-card-inner');
+let hasFlipped = false; //verify if the card has flipped or not
+let firstCard, secondCard;
 
 function flipCard() {
-    this.classList.toggle('flip');
+    console.log(this)
+    this.classList.add('flip');
+    //to verify if card has flipped using the let variables
+    if (!hasFlipped) {
+        //firstCard
+        hasFlipped = true;
+        firstCard = this;
+    } else {
+        hasFlipped = false;
+        secondCard = this;
+    }
 }
 cards.forEach(card => card.addEventListener('click', flipCard)); //listen to detect the click event
