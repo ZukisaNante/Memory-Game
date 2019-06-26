@@ -24,3 +24,11 @@ function new_Card() {
     }
     document.getElementById('memory_board').innerHTML = output;
 } */
+
+//Declaring variables
+const cards = document.querySelectorAll('.flip-card-inner');
+
+function flipCard() {
+    this.classList.toggle('flip');
+}
+cards.forEach(card => card.addEventListener('click', flipCard)); //listen to detect the click event
