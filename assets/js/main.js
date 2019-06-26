@@ -43,7 +43,22 @@ function flipCard() {
         //second click
         hasFlipped = false;
         secondCard = this;
-        console.log({ firstCard, secondCard });
+        checkForMatch();
     }
 }
-cards.forEach(card => card.addEventListener('click', flipCard)); //listen to detect the click event
+//checking if cards do match or not
+function checkForMatch() {
+    if (firstCard.dataset.framework === secondCard.dataset.framework) {
+        //they match
+        firstCard.removeEventListener('click', flipCard);
+        secondCard.removeEventListener('click', flipCard);
+    } else {
+        //if they don't match flip/hide back side again
+        setTimeout(() => {
+            firstCard.classList.remove('flip');
+            secondCard.classList.remove('flip');
+        }, 1500);
+    }
+}
+//listen to detect the click event
+cards.forEach(card => card.addEventListener('click', flipCard));
