@@ -31,6 +31,8 @@ let hasFlipped = false; //verify if the card has flipped or not
 let firstCard, secondCard;
 
 function flipCard() {
+    //this keyword refers to the object it belongs to. 
+    //this refers to the global object.
     this.classList.add('flip');
     //to verify if card has flipped using the let variables
     if (!hasFlipped) {
@@ -38,8 +40,10 @@ function flipCard() {
         hasFlipped = true;
         firstCard = this;
     } else {
+        //second click
         hasFlipped = false;
         secondCard = this;
+        console.log({ firstCard, secondCard });
     }
 }
 cards.forEach(card => card.addEventListener('click', flipCard)); //listen to detect the click event
