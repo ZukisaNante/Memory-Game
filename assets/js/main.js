@@ -50,15 +50,23 @@ function flipCard() {
 function checkForMatch() {
     if (firstCard.dataset.framework === secondCard.dataset.framework) {
         //they match
-        firstCard.removeEventListener('click', flipCard);
-        secondCard.removeEventListener('click', flipCard);
+        disableCards(); //calling function declared outside
     } else {
-        //if they don't match flip/hide back side again
-        setTimeout(() => {
-            firstCard.classList.remove('flip');
-            secondCard.classList.remove('flip');
-        }, 1500);
+        unflipped(); //calling function declared outside
     }
+}
+// Disable cards function
+function disableCards() {
+    firstCard.remove.addEventListener('click', flipCard);
+    secondCard.remove.addEventListener('click', flipCard);
+}
+//not-flipped function
+function unflipped() {
+    //if they don't match flip/hide back side again
+    setTimeout(() => {
+        firstCard.classList.remove('flip');
+        secondCard.classList.remove('flip');
+    }, 1500);
 }
 //listen to detect the click event
 cards.forEach(card => card.addEventListener('click', flipCard));
