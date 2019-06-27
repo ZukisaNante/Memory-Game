@@ -49,7 +49,7 @@ body {
 /* flip-card-front background*/
 
 .flip-card-front {
-    background-image: url('/assets/img/cover.png');
+    background-image: url('../img/cover.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
