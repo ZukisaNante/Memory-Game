@@ -8,7 +8,7 @@
 /*Responsive*/
 
 /* For mobile phones: */
-[class*="col-"] {
+[class*="row"] {
   width: 100%;
 }
 
