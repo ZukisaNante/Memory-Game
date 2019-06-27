@@ -28,9 +28,12 @@ function new_Card() {
 //Declaring variables
 const cards = document.querySelectorAll('.flip-card-inner');
 let hasFlipped = false; //verify if the card has flipped or not
+let lockBoard = false;
 let firstCard, secondCard;
 
 function flipCard() {
+    if (lockBoard) return;
+    if (this === firstCard) return; // avoid cards to remain flipped
     //this keyword refers to the object it belongs to. 
     //this refers to the global object.
     this.classList.add('flip');
@@ -39,13 +42,14 @@ function flipCard() {
         //firstCard
         hasFlipped = true;
         firstCard = this;
-    } else {
-        //second click
-        hasFlipped = false;
-        secondCard = this;
-        checkForMatch();
+        return; //if it's true will stop the execution here
     }
+    //second click
+    secondCard = this;
+
+    checkForMatch();
 }
+
 //checking if cards do match or not
 function checkForMatch() {
     let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
@@ -55,14 +59,32 @@ function checkForMatch() {
 function disableCards() {
     firstCard.remove.addEventListener('click', flipCard);
     secondCard.remove.addEventListener('click', flipCard);
+
+    resetBoard();
 }
 //not-flipped function
 function unflipCards() {
+    lockBoard = true;
     //if they don't match flip/hide back side again
     setTimeout(() => {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
+
+        lockBoard = false; //make sure that you can't click any card without confirming setTimeout()
+        resetBoard();
     }, 1500);
 }
+
+function resetBoard() {
+    [hasFlipped, lockBoard] = [false, false]; //using ES6 assignment
+    [firstCard, secondCard] = [null, null];
+}
+//Shuffling
+(function shuffle() {
+    cards.forEach(card => {
+        let randomPos = Math.floor(Math.random() * 30); //Math.floor for integer
+        card.getElementsByClassName.randomPos;
+    })
+}());
 //listen to detect the click event
 cards.forEach(card => card.addEventListener('click', flipCard));
