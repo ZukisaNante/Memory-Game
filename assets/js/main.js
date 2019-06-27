@@ -57,8 +57,8 @@ function checkForMatch() {
 }
 // Disable cards function
 function disableCards() {
-    firstCard.remove.addEventListener('click', flipCard);
-    secondCard.remove.addEventListener('click', flipCard);
+    firstCard.removeEventListener('click', flipCard);
+    secondCard.removeEventListener('click', flipCard);
 
     resetBoard();
 }
@@ -83,7 +83,8 @@ function resetBoard() {
 (function shuffle() {
     cards.forEach(card => {
         let randomPos = Math.floor(Math.random() * 30); //Math.floor for integer
-        card.getElementsByClassName.randomPos;
+        card.style.order = randomPos;
+
     })
 }());
 //listen to detect the click event
