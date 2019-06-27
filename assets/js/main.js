@@ -82,7 +82,7 @@ function resetBoard() {
 //Shuffling
 (function shuffle() {
     cards.forEach(card => {
-        let randomPos = Math.floor(Math.random() * 30); //Math.floor for integer
+        let randomPos = Math.floor(Math.random() * 12); //Math.floor for integer
         card.style.order = randomPos;
 
     })
