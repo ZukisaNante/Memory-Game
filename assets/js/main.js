@@ -48,12 +48,8 @@ function flipCard() {
 }
 //checking if cards do match or not
 function checkForMatch() {
-    if (firstCard.dataset.framework === secondCard.dataset.framework) {
-        //they match
-        disableCards(); //calling function declared outside
-    } else {
-        unflipped(); //calling function declared outside
-    }
+    let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
+    isMatch ? disableCards() : unflipCards(); //conditional (ternary) operator used for if else
 }
 // Disable cards function
 function disableCards() {
@@ -61,7 +57,7 @@ function disableCards() {
     secondCard.remove.addEventListener('click', flipCard);
 }
 //not-flipped function
-function unflipped() {
+function unflipCards() {
     //if they don't match flip/hide back side again
     setTimeout(() => {
         firstCard.classList.remove('flip');
