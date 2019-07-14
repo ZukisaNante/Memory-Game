@@ -16,7 +16,7 @@
     }
 =======
 /* For mobile phones: */
-[class*="row"] {
+[class*="col-"] {
   width: 100%;
 >>>>>>> 706cfed192cfed933e6d0710b9cc23e0e0879044
 }
