@@ -7,12 +7,18 @@
 
 /*Responsive*/
 
+<<<<<<< HEAD
 @media screen and (max-width: 600px) {
     .flip-card-inner {
         width: 100%;
         display: block;
         margin-bottom: 20px;
     }
+=======
+/* For mobile phones: */
+[class*="row"] {
+  width: 100%;
+>>>>>>> 706cfed192cfed933e6d0710b9cc23e0e0879044
 }
 
 
