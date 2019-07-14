@@ -1,0 +1,37 @@
+[33mbd45e00[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: commit (merge): index.html
+[33mebedd8a[m HEAD@{1}: commit: index.html
+[33m5310298[m HEAD@{2}: commit: math random number changed
+[33m76c87fe[m HEAD@{3}: commit: cover photo given a correct path
+[33mc8a0c88[m HEAD@{4}: commit: Shuffle cards works now left with shuffle
+[33mea715aa[m HEAD@{5}: commit: shuffle
+[33m81c124f[m HEAD@{6}: commit: readme updated
+[33m9d3576f[m HEAD@{7}: commit: cards flip and compare matching
+[33m53ecb05[m HEAD@{8}: commit: background image not working on git
+[33mda8e729[m HEAD@{9}: commit: background img updated as it failed to execute
+[33m7d31c3c[m HEAD@{10}: commit: function chechForMAtch added and it worked
+[33m53e24eb[m HEAD@{11}: commit: data framework added so that JS can identify similarities
+[33m1cc52b0[m HEAD@{12}: commit: JS flip function wokring
+[33m5caeb4c[m HEAD@{13}: commit: JS flip function wokring
+[33m8d7f7a8[m HEAD@{14}: commit: javascript toggle to the elements added
+[33m1c785d4[m HEAD@{15}: commit: folders path updated
+[33m69a661e[m HEAD@{16}: commit: images added
+[33m0df8256[m HEAD@{17}: commit: images again
+[33mf63a415[m HEAD@{18}: commit: image names changed as they gave errors
+[33ma8a9640[m HEAD@{19}: commit: images changed
+[33m3130601[m HEAD@{20}: commit: images added for the game
+[33m870efb9[m HEAD@{21}: commit: assets/css/main.css
+[33m58229b0[m HEAD@{22}: commit: two extra rows added
+[33mc87edf3[m HEAD@{23}: commit: text/css added to the link to resolve css issue
+[33m2d2d69e[m HEAD@{24}: commit: three rows created
+[33m1e55d15[m HEAD@{25}: commit: css styling is finished and columns created with six cards
+[33m2f8627c[m HEAD@{26}: commit: crads created and responsiveness added
+[33mb601035[m HEAD@{27}: commit: index page restarted with new information
+[33maf7d380[m HEAD@{28}: commit: index page restarted with new information
+[33mcd34e7d[m HEAD@{29}: commit: readme updated
+[33m226f447[m HEAD@{30}: pull: Merge made by the 'recursive' strategy.
+[33m96906e5[m HEAD@{31}: commit: assets/css/main.css
+[33me8c60f0[m HEAD@{32}: commit: flip cards script added
+[33m29d9c3e[m HEAD@{33}: commit: variables declared and an array to hold cards
+[33m2492983[m HEAD@{34}: commit: background styled
+[33m5099461[m HEAD@{35}: commit: index.html
+[33m2c083e9[m HEAD@{36}: clone: from https://github.com/ZukisaNante/Memory-Game.git
