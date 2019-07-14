@@ -82,20 +82,10 @@ function resetBoard() {
 //Shuffling
 (function shuffle() {
     cards.forEach(card => {
-        let randomPos = Math.floor(Math.random() * 30); //Math.floor for integer
+        let randomPos = Math.floor(Math.random() * 12); //Math.floor for integer
         card.style.order = randomPos;
-        console.log(card);
-    });
-})();
 
-/* function shuffleDeck() {
-    for (let i = this.cards.length - 1; i > 0; i--) {
-        let randomIndex = Math.floor(Math.random() * i);
-
-        let temp = this.cards[i];
-        this.cards[i] = this.cards[randomIndex];
-        this.cards[randomIndex] = temp;
-    }
-} */
+    })
+}());
 //listen to detect the click event
 cards.forEach(card => card.addEventListener('click', flipCard));
